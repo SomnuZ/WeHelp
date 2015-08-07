@@ -1,0 +1,118 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- LAS theme Start-->
+    <declare-styleable name="Theme.LASHelpCenterCompat">
+        <attr name="las_hc_searchActionButtonIcon" format="reference"/>
+        <attr name="las_hc_leftChatBubbleBackground" format="reference"/>
+        <attr name="las_hc_rightChatBubbleBackground" format="reference"/>
+        <attr name="las_hc_leftChatBubbleTextColor" format="color"/>
+        <attr name="las_hc_rightChatBubbleTextColor" format="color"/>
+        <attr name="las_hc_leftChatBubbleTextSize" format="dimension"/>
+        <attr name="las_hc_rightChatBubbleTextSize" format="dimension"/>
+        <attr name="las_hc_contactUsButtonIcon" format="reference"/>
+        <attr name="las_hc_sendButtonIcon" format="reference"/>
+        <attr name="las_hc_chooseImageIcon" format="reference"/>
+        <attr name="las_hc_searchHintTextColor" format="color"/>
+        <attr name="las_hc_messageCountBackground" format="reference"/>
+        <attr name="las_hc_messageCountTextColor" format="color"/>
+        <attr name="las_hc_messageCountTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <style name="LASHelpCenter.Theme.Base" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/LASHelpCenter.Theme.ActionBar</item>
+        <item name="android:textSize">@dimen/las_hc_default_text_size</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="searchViewStyle">@style/LASHelpCenter.Style.SearchView</item>
+    </style>
+
+    <style name="LASHelpCenter"/>
+
+    <style name="LASHelpCenter.Style"/>
+
+    <style name="LASHelpCenter.Style.ListViewItem">
+        <item name="android:paddingLeft">@dimen/las_hc_vertical_margin</item>
+        <item name="android:paddingRight">@dimen/las_hc_vertical_margin</item>
+        <item name="android:paddingTop">@dimen/las_hc_horizontal_half_margin</item>
+        <item name="android:paddingBottom">@dimen/las_hc_horizontal_half_margin</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/las_hc_text_size_larger</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="LASHelpCenter.Style.EditText">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/las_hc_default_text_size</item>
+    </style>
+
+    <style name="LASHelpCenter.Style.MultilineEditText">
+        <item name="android:singleLine">false</item>
+        <item name="android:textSize">@dimen/las_hc_default_text_size</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:maxLines">3</item>
+    </style>
+
+
+    <!-- Customization Start -->
+    <style name="LASHelpCenter.Theme" parent="LASHelpCenter.Theme.Base">
+        <!-- used to indicate color accent -->
+        <item name="colorAccent">@color/accent_material_light</item>
+
+        <!-- used to indicate drawable icon for up button -->
+        <item name="homeAsUpIndicator">@drawable/las_hc_btn_navigation_up_normal</item>
+
+        <!-- used to indicate drawable icon for search action view -->
+        <item name="las_hc_searchActionButtonIcon">@drawable/las_hc_btn_navigation_search_normal</item>
+
+        <!-- used to indicate left chat bubble background,text color and text size -->
+        <item name="las_hc_leftChatBubbleBackground">@drawable/las_hc_icon_right_dialog_gray</item>
+        <item name="las_hc_leftChatBubbleTextColor">#000000</item>
+        <item name="las_hc_leftChatBubbleTextSize">16sp</item>
+
+        <!-- used to indicate right chat bubble background,text color and text size -->
+        <item name="las_hc_rightChatBubbleBackground">@drawable/las_hc_icon_dialog_blue</item>
+        <item name="las_hc_rightChatBubbleTextColor">#FFFFFF</item>
+        <item name="las_hc_rightChatBubbleTextSize">16sp</item>
+
+        <!-- used to indicate drawable icon for contact us button -->
+        <item name="las_hc_contactUsButtonIcon">@drawable/lac_hc_btn_actionbar_contactus_normal</item>
+
+        <!-- used to indicate background, textColor, textSize for new message count -->
+        <item name="las_hc_messageCountBackground">@drawable/las_hc_icon_redpoint</item>
+        <item name="las_hc_messageCountTextColor">#FFFFFF</item>
+        <item name="las_hc_messageCountTextSize">@dimen/las_hc_text_size_minimum</item>
+
+        <!-- used to indicate drawable icon for send button -->
+        <item name="las_hc_sendButtonIcon">@drawable/las_hc_btn_sendpic_normal</item>
+
+        <!-- used to indicate drawable icon for choose image button -->
+        <item name="las_hc_chooseImageIcon">@drawable/las_hc_btn_actionbar_chooseapic_normal</item>
+
+        <!-- used to indicate search hint text color -->
+        <item name="las_hc_searchHintTextColor">#FFFFFF</item>
+    </style>
+
+    <style name="LASHelpCenter.Theme.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="titleTextStyle">@style/LASHelpCenter.Theme.ActionBar.Title</item>
+
+        <!-- used to indicate action bar background color -->
+        <item name="background">@color/las_hc_base_color</item>
+    </style>
+
+    <style name="LASHelpCenter.Theme.ActionBar.Title" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <!-- used to indicate action bar title text color -->
+        <item name="android:textColor">#FFFFFF</item>
+
+        <!-- used to indicate action bar title text size -->
+        <item name="android:textSize">@dimen/abc_text_size_title_material_toolbar</item>
+    </style>
+
+    <style name="LASHelpCenter.Style.SearchView" parent="Widget.AppCompat.SearchView">
+        <!-- used to indicate drawable icon for search hint -->
+        <item name="searchIcon">@drawable/las_hc_btn_navigation_search_normal</item>
+    </style>
+    <!-- Customization End -->
+
+    <!-- LAS theme End-->
+
+</resources>

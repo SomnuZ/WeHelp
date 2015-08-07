@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="as.leap.helpcenterres">
+
+    <application>
+
+        <!-- las help center activities start-->
+        <activity
+            android:name="as.leap.LASFaqListActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/las_hc_faq"
+            android:theme="@style/LASHelpCenter.Theme">
+        </activity>
+        <activity
+            android:name="as.leap.LASQuestionListActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/las_hc_allQuestions"
+            android:theme="@style/LASHelpCenter.Theme">
+        </activity>
+        <activity
+            android:name="as.leap.LASQuestionDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/las_hc_question"
+            android:theme="@style/LASHelpCenter.Theme">
+        </activity>
+        <activity
+            android:name="as.leap.LASQuestionQueryResultActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/las_hc_allQuestions"
+            android:theme="@style/LASHelpCenter.Theme">
+        </activity>
+        <activity
+            android:name="as.leap.LASConversationActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/las_hc_conversation"
+            android:theme="@style/LASHelpCenter.Theme"
+            android:windowSoftInputMode="adjustUnspecified">
+        </activity>
+        <activity
+            android:name="as.leap.LASAlbumActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/las_hc_album"
+            android:theme="@style/LASHelpCenter.Theme">
+        </activity>
+        <activity
+            android:name="as.leap.LASDrawingActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/las_hc_drawing"
+            android:screenOrientation="portrait"
+            android:theme="@style/LASHelpCenter.Theme">
+        </activity>
+        <activity
+            android:name="as.leap.LASFaqDialogActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/las_hc_question"
+            android:theme="@style/LASHelpCenter.Theme">
+        </activity>
+        <activity
+            android:name="as.leap.LASImageDialogActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/LASHelpCenter.Theme">
+        </activity>
+        <!-- las help center activities end-->
+
+    </application>
+
+</manifest>

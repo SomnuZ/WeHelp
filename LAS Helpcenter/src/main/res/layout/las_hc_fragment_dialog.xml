@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/las_hc_horizontal_margin"
+    android:paddingLeft="@dimen/las_hc_vertical_margin"
+    android:paddingRight="@dimen/las_hc_vertical_margin"
+    android:paddingTop="@dimen/las_hc_horizontal_margin" >
+
+    <TextView
+        android:id="@+id/las_dialog_msg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/las_hc_msg_requestScore" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/las_dialog_btnLeft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/las_hc_later" />
+
+        <Button
+            android:id="@+id/las_dialog_btnRight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/las_hc_score" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+    <ImageButton
+
+        android:id="@+id/las_action_ibContactUs"
+        style="@style/Widget.AppCompat.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="?attr/las_hc_contactUsButtonIcon"
+        tools:ignore="ContentDescription"/>
+
+    <LinearLayout
+        android:id="@+id/las_action_tvMessageCountContainer"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignRight="@id/las_action_ibContactUs"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="?las_hc_messageCountBackground"
+        android:padding="2dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/las_action_tvMessageCount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="?attr/las_hc_messageCountTextColor"
+            android:textSize="?attr/las_hc_messageCountTextSize"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="las-sdk-helpcenter-v0.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/las-sdk-helpcenter-v0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
